@@ -15,15 +15,10 @@ jobs:
    runs-on: ubuntu-latest
 
    steps:
-     - name: 'before'
-       run: ls
-
+     
      - uses: actions/checkout@v3  
-
-     - name: 'printing folder contents'
-       run: ls
-   
-     - name: 'after'
-       run: ls
+     - name: 'login to Docker hub'
+       run: docker login --username raneem123 --password dckr_pat_4Lp_cJ0UDIY1eZyYlyPi5iKIJ-Y
+     
 
    
